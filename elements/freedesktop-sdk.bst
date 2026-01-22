@@ -11,7 +11,7 @@ sources:
   # - Common plugins in elements/plugins
   track: release/25.08
   track-tags: True
-  ref: freedesktop-sdk-25.08.6-0-g969f986893cc354ae714ec8c460f693e29ea97b0
+  ref: freedesktop-sdk-25.08.7-0-g8287748d639f575825280f6d67eec48d60718efa
 
 config:
   options:
