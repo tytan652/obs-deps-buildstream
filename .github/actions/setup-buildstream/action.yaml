@@ -109,7 +109,7 @@ runs:
         echo ::endgroup
 
         echo ::group::Create container
-        SHELL=$(which bash) toolbox -y --log-level=info --log-podman create buildstream --image registry.gitlab.com/freedesktop-sdk/infrastructure/freedesktop-sdk-docker-images/bst2:latest
+        SHELL=$(which bash) toolbox -y --log-level=info --log-podman create buildstream --image registry.gitlab.com/freedesktop-sdk/infrastructure/freedesktop-sdk-docker-images/bst2:4387d0fa82f12808377dacc5feaf08a0d82a06af
         echo 'shell=toolbox run -c buildstream bash --noprofile --norc -eo pipefail {0}' >> $GITHUB_OUTPUT
         echo ::endgroup
 
