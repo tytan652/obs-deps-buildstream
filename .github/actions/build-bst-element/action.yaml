@@ -56,6 +56,26 @@ runs:
         : Build ${{ inputs.element }}
         bst --no-interactive ${{ steps.parse-inputs.outputs.options }} build ${{ inputs.element }}
 
+    - name: Debugging
+      if: ${{ failure() && (steps.build.conclusion == 'failure') }}
+      shell: bash
+      run: |
+        echo ::group::whoami
+        whoami
+        echo ::endgroup::
+
+        echo ::group::/etc/passwd
+        cat /etc/passwd
+        echo ::endgroup::
+
+        echo ::group::/etc/subuid
+        cat /etc/subuid
+        echo ::endgroup::
+
+        echo ::group::/etc/subgid
+        cat /etc/subgid
+        echo ::endgroup::
+
     - name: Upload Logs On Failure
       if: ${{ failure() && (steps.build.conclusion == 'failure') }}
       uses: actions/upload-artifact@v4
