@@ -1,4 +1,5 @@
 name: Build BuildStream Element
+description: N/A
 inputs:
   shell:
     description: Shell with BuildStream env
@@ -75,6 +76,13 @@ runs:
         echo ::group::/etc/subgid
         cat /etc/subgid
         echo ::endgroup::
+
+    - name: Debugging 2
+      if: ${{ failure() && (steps.build.conclusion == 'failure') }}
+      shell: bash
+      run: |
+        podman start --attach --interactive buildstream
+        echo "Hello World!!!"
 
     - name: Upload Logs On Failure
       if: ${{ failure() && (steps.build.conclusion == 'failure') }}
