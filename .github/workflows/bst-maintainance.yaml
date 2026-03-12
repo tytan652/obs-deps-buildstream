@@ -62,7 +62,7 @@ jobs:
 
       - name: Create pull request
         if: ${{ fromJSON(steps.check.outputs.changed) }}
-        uses: peter-evans/create-pull-request@d121e62763d8cc35b5fb1710e887d6e69a52d3a4
+        uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0
         with:
           author: 'Update Checker <commits@obsproject.com>'
           commit-message: 'Update Freedesktop SDK to version ${{ steps.sync.outputs.version }}'
