@@ -22,7 +22,7 @@ jobs:
       cache-key-hash: ${{ steps.cache-key-hash.outputs.hash }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Generate cache key hash
         id: cache-key-hash

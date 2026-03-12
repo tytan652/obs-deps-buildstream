@@ -54,7 +54,7 @@ runs:
 
     - name: Restore Cache
       id: restore
-      uses: actions/cache/restore@v4
+      uses: actions/cache/restore@v5
       with:
         path: ${{ inputs.path }}
         key: ${{ inputs.key }}

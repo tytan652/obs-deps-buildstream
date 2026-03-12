@@ -33,7 +33,7 @@ runs:
         du -hs ${{ inputs.path }}
 
     - name: Save Cache
-      uses: actions/cache/save@v4
+      uses: actions/cache/save@v5
       with:
         key: ${{ inputs.key }}
         path: ${{ inputs.path }}

@@ -44,7 +44,7 @@ jobs:
       cache-key: ${{ steps.cache-restore.outputs.cache-primary-key }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Prepare build space
         uses: ./.github/actions/prepare-build-space
@@ -124,7 +124,7 @@ jobs:
       FILENAME: flatpak-${{ matrix.modules }}-${{ inputs.arch }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Prepare build space
         uses: ./.github/actions/prepare-build-space
@@ -167,7 +167,7 @@ jobs:
 
       - name: Upload ${{ matrix.modules }} Tarball
         if: ${{ inputs.upload-artifacts }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ${{ env.FILENAME }}
           path: ${{ env.FILENAME }}.tar.xz

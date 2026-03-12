@@ -58,7 +58,7 @@ runs:
 
     - name: Upload Logs On Failure
       if: ${{ failure() && (steps.build.conclusion == 'failure') }}
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: ${{ steps.parse-inputs.outputs.sanitized-element }}.logs
         path: ${{ inputs.logs-path }}
