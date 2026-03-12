@@ -1,4 +1,5 @@
 name: Build BuildStream Element
+description: Build an element from a BuildStream project
 inputs:
   shell:
     description: Shell with BuildStream env

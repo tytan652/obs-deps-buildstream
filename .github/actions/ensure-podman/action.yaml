@@ -1,4 +1,5 @@
 name: Ensure Podman
+description: Install podman to ensure that the runner has it
 runs:
   using: composite
   steps:

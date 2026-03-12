@@ -1,4 +1,5 @@
 name: Setup BuildStream
+description: Setup a Buildstream with toolbox
 inputs:
   caches-path:
     description: Path to the cache folder that BuildStream will use to cache artifacts
@@ -19,7 +20,7 @@ inputs:
   local-cache-server-port:
     description: Port of the local cache server
     required: false
-    default: 11001
+    default: '11001'
   local-cache-server-push:
     description: Enable pushing to the local cache server (none, artifacts, sources, both)
     required: false

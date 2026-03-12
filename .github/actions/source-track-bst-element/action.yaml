@@ -1,4 +1,5 @@
 name: Source Track BuildStream Element
+description: Trigger source track on a BuildStream element
 inputs:
   shell:
     description: Shell with BuildStream env

@@ -1,4 +1,5 @@
 name: Sync shared Freedesktop SDK files
+description: Synchronize files copied from Freedesktop SDK BuildStream
 inputs:
   fsdk-element:
     description: Freedesktop SDK BuildStream element

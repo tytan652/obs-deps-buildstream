@@ -14,7 +14,7 @@ inputs:
   server-port:
     description: Port to be binded to the buildbox-casd container
     required: false
-    default: 11001
+    default: '11001'
   server-quota-high:
     description: |
       Maximum local cache size option from buildbox-casd (e.g., 50G or 2T).

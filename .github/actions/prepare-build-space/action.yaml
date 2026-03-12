@@ -1,4 +1,5 @@
 name: Prepare Build Space
+description: Remove things that we do no need and free wasted space
 runs:
   using: composite
   steps:

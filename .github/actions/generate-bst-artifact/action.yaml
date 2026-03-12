@@ -1,4 +1,5 @@
 name: Generate BuildStream Artifact
+description: Generate artifact from a BuildStream project element
 inputs:
   shell:
     description: Shell with Buildstream env
