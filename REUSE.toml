@@ -41,3 +41,10 @@ SPDX-License-Identifier = "Apache-2.0 OR GPL-2.0-or-later"
 path = ["patches/srt/0001-enable-proper-cmake-build-types.patch"]
 SPDX-FileCopyrightText = "2022 OBS Project"
 SPDX-License-Identifier = "MIT"
+
+# Qt backports
+[[annotations]]
+path = ["patches/qt-base/0001-QTBUG-146665.patch"]
+# Based on patched file license headers
+SPDX-FileCopyrightText = "2020 The Qt Company Ltd."
+SPDX-License-Identifier = "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"

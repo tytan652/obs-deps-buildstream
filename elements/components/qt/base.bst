@@ -317,3 +317,5 @@ sources:
 - kind: tar
   url: qt_archive:%{qt-api-version}/%{qt-version}/submodules/qtbase-everywhere-src-%{qt-version}.tar.xz
   ref: d9594a31228aa23ad6b531719a29b45f0f3989fe6c136d45767ea179f233c1ac
+- kind: patch
+  path: patches/qt-base/0001-QTBUG-146665.patch
