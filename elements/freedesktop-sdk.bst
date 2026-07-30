@@ -10,7 +10,7 @@ sources:
   # - Check out elements conf and enviroments if there is something that could be ported
   track: release/25.08
   track-tags: True
-  ref: freedesktop-sdk-25.08.14-0-g57149392fe26548b0e7c50a2e171e3aac005a412
+  ref: freedesktop-sdk-25.08.15-0-gda39a00d43df80bcf17898c2ebf7035df59a6a39
 
 config:
   options:
