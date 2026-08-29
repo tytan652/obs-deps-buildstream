@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: Freedesktop-SDK Developers
+# SPDX-License-Identifier: MIT
+
 build-depends:
 - freedesktop-sdk.bst:components/nasm.bst
 - freedesktop-sdk.bst:components/vulkan-headers.bst
@@ -8,6 +11,10 @@ build-depends:
     build-depends:
       (>):
       - freedesktop-sdk.bst:components/nv-codec-headers.bst
+- target_arch == "x86_64":
+    build-depends:
+      (>):
+      - freedesktop-sdk.bst:components/amf-headers.bst
 
 variables:
   optimize-debug: "false"
@@ -16,7 +23,11 @@ variables:
   (?):
   - target_arch == "i686":
       ffmpeg-arch: x86
-  - target_arch in ["x86_64", "i686", "aarch64", "ppc64le"]:
+  - target_arch == "x86_64":
+      arch-conf: >-
+        --enable-ffnvcodec
+        --enable-amf
+  - target_arch in ["i686", "aarch64", "ppc64le"]:
       arch-conf: >-
         --enable-ffnvcodec
 

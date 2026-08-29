@@ -2,7 +2,7 @@ kind: make
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
-- freedesktop-sdk.bst:components/git-minimal.bst
+- freedesktop-sdk.bst:components/git.bst
 
 depends:
 - junction: freedesktop-sdk.bst

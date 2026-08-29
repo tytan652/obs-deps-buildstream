@@ -7,6 +7,9 @@ depends:
 - components/mbedtls.bst
 
 variables:
+  local_flags: >-
+    -Wno-error=discarded-qualifiers
+
   meson-local: >-
     -Duse_mbedtls=true
     -Dbuiltin_cjson=true
