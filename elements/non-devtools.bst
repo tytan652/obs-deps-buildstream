@@ -2,6 +2,7 @@ kind: stack
 description: Stack of OBS Studio non-Qt dependencies without building tools
 
 depends:
+- components/amf-headers.bst
 - components/asio.bst
 - components/extra-cmake-modules.bst
 - components/ffmpeg.bst

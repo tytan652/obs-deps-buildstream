@@ -6,6 +6,7 @@ description: FFmpeg component based on the Freedesktop SDK config
 
 build-depends:
   (>):
+  - components/amf-headers.bst
   - components/nv-codec-headers.bst
 
 depends:
@@ -32,6 +33,7 @@ variables:
     --enable-libaom
     --enable-libsvtav1
     --enable-nvenc
+    --enable-amf
 
 public:
   bst:
